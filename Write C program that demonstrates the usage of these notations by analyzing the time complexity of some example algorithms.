@@ -1,0 +1,21 @@
+#include <stdio.h>
+void exampleAlgorithm1(int n) {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i;
+    }
+}
+void exampleAlgorithm2(int n) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            count++;
+        }
+    }
+}
+int main() {
+    int inputSize = 10;
+    exampleAlgorithm1(inputSize);
+    exampleAlgorithm2(inputSize);
+    return 0;
+}
